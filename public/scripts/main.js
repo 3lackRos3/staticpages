@@ -114,9 +114,11 @@
   function setupThemeToggle() {
     if (!elements.themeToggle) return;
 
-    // Load saved theme or default to light
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
+    // Load saved theme or fall back to system preference, defaulting to light
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    setTheme(initialTheme);
 
     elements.themeToggle.addEventListener('click', toggleTheme);
   }
@@ -125,12 +127,7 @@
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
     
-    if (elements.themeToggle) {
-      const icon = elements.themeToggle.querySelector('.toggle-icon');
-      if (icon) {
-        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
-      }
-    }
+    // Icon visibility is handled purely by CSS using [data-theme]
   }
 
   function toggleTheme() {
