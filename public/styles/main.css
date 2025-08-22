@@ -542,6 +542,20 @@ section {
 
 .case-image {
   height: 300px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.case-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.3s ease;
+}
+
+.case-study:hover .case-image img {
+  transform: scale(1.05);
 }
 
 .image-placeholder {
@@ -657,30 +671,70 @@ section {
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-16);
-  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.about-text .section-title {
-  text-align: left;
+.about-intro {
+  text-align: center;
+}
+
+.about-intro .section-title {
   margin-bottom: var(--space-8);
 }
 
 .about-description {
   margin-bottom: var(--space-12);
   font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 0 auto var(--space-12) auto;
+}
+
+.about-mission,
+.about-approach,
+.about-values,
+.about-cta {
+  margin-bottom: var(--space-12);
+}
+
+.about-mission h3,
+.about-approach h3,
+.about-values h3,
+.about-cta h3 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-6);
+  color: var(--color-text);
+}
+
+.about-mission p,
+.about-approach p,
+.about-cta p {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
 }
 
 .about-highlights {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--space-8);
+  margin: var(--space-12) 0;
+}
+
+.highlight {
+  text-align: center;
+  padding: var(--space-6);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
 }
 
 .highlight h4 {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: var(--space-2);
@@ -691,8 +745,40 @@ section {
   color: var(--color-secondary);
 }
 
-.about-image {
-  height: 400px;
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-8);
+}
+
+.value-item h4 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.value-item p {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.about-cta {
+  text-align: center;
+  padding: var(--space-12);
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+}
+
+.about-cta h3 {
+  color: var(--color-primary);
+}
+
+.about-cta p {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Comparison Table - Dapper Style */
