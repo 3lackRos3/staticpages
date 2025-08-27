@@ -414,8 +414,8 @@ section {
 .service-number {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
-  color: var(--color-accent);
-  font-weight: 600;
+  color: #1e40af; /* Darker blue for better contrast */
+  font-weight: 700;
   margin-bottom: var(--space-4);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -480,8 +480,8 @@ section {
 
 .case-category {
   font-size: var(--text-sm);
-  color: var(--color-accent);
-  font-weight: 600;
+  color: #1e40af; /* Darker blue for better contrast */
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: var(--space-2);
@@ -602,8 +602,8 @@ section {
 
 .blog-category {
   font-size: var(--text-sm);
-  color: var(--color-accent);
-  font-weight: 600;
+  color: #1e40af; /* Darker blue for better contrast */
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: var(--space-3);
@@ -654,7 +654,7 @@ section {
 }
 
 .blog-link {
-  color: var(--color-accent);
+  color: #1e40af; /* Darker blue for better contrast */
   text-decoration: none;
   font-weight: 600;
   font-size: var(--text-sm);
@@ -833,9 +833,9 @@ section {
 }
 
 .row-value.highlight {
-  background: rgba(59, 130, 246, 0.1);
-  color: var(--color-accent);
-  font-weight: 600;
+  background: rgba(30, 64, 175, 0.1);
+  color: #1e40af; /* Darker blue for better contrast */
+  font-weight: 700;
 }
 
 /* Contact Section */
@@ -992,7 +992,7 @@ section {
   gap: var(--space-8);
 }
 
-.link-group h4 {
+.link-group h3 {
   color: var(--color-white);
   font-size: var(--text-base);
   font-weight: 600;
@@ -1049,7 +1049,7 @@ section {
 }
 
 [data-theme="dark"] .footer-brand .brand-text,
-[data-theme="dark"] .link-group h4 {
+[data-theme="dark"] .link-group h3 {
   color: rgba(248, 250, 252, 1) !important;
 }
 
@@ -1265,7 +1265,7 @@ section {
   color: var(--color-secondary) !important;
 }
 
-[data-theme="dark"] .footer .link-group h4 {
+[data-theme="dark"] .footer .link-group h3 {
   color: var(--color-white) !important;
 }
 
@@ -1340,7 +1340,7 @@ html[data-theme="dark"] body .footer .footer-bottom p {
   color: #94a3b8 !important;
 }
 
-html[data-theme="dark"] body .footer .link-group h4 {
+html[data-theme="dark"] body .footer .link-group h3 {
   color: #f8fafc !important;
 }
 
@@ -1388,7 +1388,7 @@ html:not([data-theme="dark"]) body .footer .link-group a {
   color: var(--color-secondary) !important;
 }
 
-html:not([data-theme="dark"]) body .footer .link-group h4 {
+html:not([data-theme="dark"]) body .footer .link-group h3 {
   color: var(--color-primary) !important;
 }
 
