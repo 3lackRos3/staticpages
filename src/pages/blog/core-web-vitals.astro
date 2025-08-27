@@ -3,7 +3,11 @@ import Layout from '../../components/Layout.astro';
 import '../../styles/blog.css';
 ---
 
-<Layout title="Master Core Web Vitals: Your Complete Performance Guide - StaticPages">
+<Layout 
+  title="Master Core Web Vitals: Complete 2025 Performance Guide | StaticPages"
+  description="Comprehensive guide to optimizing Core Web Vitals (LCP, FID, CLS) for better SEO rankings and conversions. Includes real case studies with 32% conversion rate improvements."
+  keywords="Core Web Vitals, LCP optimization, FID improvement, CLS fix, Google PageSpeed, web performance metrics, INP, SEO rankings"
+  ogType="article">
   <section class="blog-hero">
     <div class="container">
       <a href="/blog" class="back-link">← Back to Blog</a>
@@ -243,6 +247,35 @@ import '../../styles/blog.css';
       <p>Ready to transform your Core Web Vitals scores and unlock better rankings and conversions? <a href="#contact">Contact our performance experts today</a> for a comprehensive Core Web Vitals audit and optimization strategy tailored to your site.</p>
     </article>
   </div>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Master Core Web Vitals: Your Complete Performance Guide",
+    "description": "Core Web Vitals have transformed from a technical curiosity to an absolute necessity for website success. Learn how to optimize LCP, FID, and CLS.",
+    "author": {
+      "@type": "Organization",
+      "name": "StaticPages"
+    },
+    "datePublished": "2024-12-19",
+    "dateModified": "2024-12-19",
+    "publisher": {
+      "@type": "Organization",
+      "name": "StaticPages",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://staticpages.site/images/logo.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://staticpages.site/blog/core-web-vitals"
+    },
+    "articleSection": "Performance",
+    "keywords": "Core Web Vitals, LCP, FID, CLS, web performance, SEO"
+  }
+  </script>
 </Layout>
 
 <style>

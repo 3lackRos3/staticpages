@@ -1,4 +1,8 @@
 ---
+import { Image } from 'astro:assets';
+import magicSeedsImg from '../images/clients/5magicseeds.png';
+import vnssImg from '../images/clients/vnss-cloud.png';
+import skyedImg from '../images/clients/skyed-earth.png';
 ---
 
 <section class="work" id="work">
@@ -26,7 +30,7 @@
           </div>
         </div>
         <div class="case-image">
-          <img src="/images/clients/5magicseeds.png" alt="5 Magic Seeds Garden Center" loading="lazy" />
+          <Image src={magicSeedsImg} alt="5 Magic Seeds Garden Center" width={400} height={300} loading="lazy" />
         </div>
       </div>
 
@@ -45,7 +49,7 @@
           </div>
         </div>
         <div class="case-image">
-          <img src="/images/clients/vnss-cloud.png" alt="VNSS Cloud Security Platform" loading="lazy" />
+          <Image src={vnssImg} alt="VNSS Cloud Security Platform" width={400} height={300} loading="lazy" />
         </div>
       </div>
 
@@ -64,7 +68,7 @@
           </div>
         </div>
         <div class="case-image">
-          <img src="/images/clients/skyed-earth.png" alt="Skyed Earth Sustainability Platform" loading="lazy" />
+          <Image src={skyedImg} alt="Skyed Earth Sustainability Platform" width={400} height={300} loading="lazy" />
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@astrojs/sitemap": "^3.5.1",
     "astro": "^5.13.2"
   }
 }

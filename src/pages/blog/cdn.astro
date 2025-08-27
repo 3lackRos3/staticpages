@@ -3,7 +3,11 @@ import Layout from '../../components/Layout.astro';
 import '../../styles/blog.css';
 ---
 
-<Layout title="Why Your Website Needs a CDN - StaticPages">
+<Layout 
+  title="Why Your Website Needs a CDN in 2025 | StaticPages"
+  description="Discover how Content Delivery Networks can reduce load times by 50%+, improve SEO rankings, and boost conversions. Complete CDN implementation guide with real case studies."
+  keywords="CDN benefits, content delivery network, website performance, load time optimization, Cloudflare CDN, Amazon CloudFront, Fastly, website speed"
+  ogType="article">
   <section class="blog-hero">
     <div class="container">
       <a href="/blog" class="back-link">← Back to Blog</a>
@@ -118,6 +122,35 @@ import '../../styles/blog.css';
       <p>Ready to supercharge your website's performance? <a href="#contact">Contact us today</a> to learn how we can help you implement a CDN solution that delivers real results.</p>
     </article>
   </div>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Why Your Website Needs a CDN",
+    "description": "Discover how Content Delivery Networks can reduce load times by up to 50% and dramatically improve user experience across the globe.",
+    "author": {
+      "@type": "Organization",
+      "name": "StaticPages"
+    },
+    "datePublished": "2024-12-18",
+    "dateModified": "2024-12-18",
+    "publisher": {
+      "@type": "Organization",
+      "name": "StaticPages",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://staticpages.site/images/logo.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://staticpages.site/blog/cdn"
+    },
+    "articleSection": "Performance",
+    "keywords": "CDN, Content Delivery Network, web performance, website speed"
+  }
+  </script>
 </Layout>
 
 <style>

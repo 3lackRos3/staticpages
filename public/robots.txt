@@ -1,0 +1,22 @@
+# Robots.txt for StaticPages
+# https://www.robotstxt.org/robotstxt.html
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Optimize crawl budget
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://staticpages.site/sitemap.xml
+
+# Block admin or private paths (if any exist in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Block common bot traps
+Disallow: /cdn-cgi/
+Disallow: /*.json$
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
