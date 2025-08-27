@@ -30,6 +30,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="author" content="StaticPages" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G67G33V8BE"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G67G33V8BE');
+    </script>
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalURL} />
