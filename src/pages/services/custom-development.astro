@@ -182,55 +182,6 @@ import Layout from '../../components/Layout.astro';
     </div>
   </section>
 
-  <section class="pricing-preview">
-    <div class="container">
-      <h2 class="section-title">Investment Range</h2>
-      <div class="pricing-cards">
-        <div class="price-card">
-          <h3>Essential Site</h3>
-          <div class="price">$2,500 - $4,500</div>
-          <p>Perfect for startups and small businesses needing a professional web presence</p>
-          <ul>
-            <li>5-8 pages</li>
-            <li>Mobile responsive design</li>
-            <li>Contact form integration</li>
-            <li>Basic SEO setup</li>
-            <li>2 weeks delivery</li>
-          </ul>
-        </div>
-        
-        <div class="price-card featured">
-          <div class="popular-badge">Most Popular</div>
-          <h3>Business Pro</h3>
-          <div class="price">$5,000 - $8,500</div>
-          <p>Comprehensive solution for growing businesses serious about results</p>
-          <ul>
-            <li>10-15 pages</li>
-            <li>Custom design system</li>
-            <li>Advanced forms & integrations</li>
-            <li>Complete SEO optimization</li>
-            <li>3-4 weeks delivery</li>
-          </ul>
-        </div>
-        
-        <div class="price-card">
-          <h3>Enterprise</h3>
-          <div class="price">$8,500+</div>
-          <p>Complex sites with custom functionality and integrations</p>
-          <ul>
-            <li>Unlimited pages</li>
-            <li>Custom CMS integration</li>
-            <li>Third-party API connections</li>
-            <li>Performance monitoring</li>
-            <li>4-6 weeks delivery</li>
-          </ul>
-        </div>
-      </div>
-      <div class="pricing-note">
-        <p>All projects include performance optimization, mobile responsiveness, and basic SEO. Need something specific? Let's talk.</p>
-      </div>
-    </div>
-  </section>
 
   <section class="cta-section">
     <div class="container">
@@ -455,100 +406,6 @@ import Layout from '../../components/Layout.astro';
   font-weight: 500;
 }
 
-.pricing-preview {
-  padding: var(--space-20) 0;
-  background: var(--color-light-gray);
-}
-
-.pricing-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
-  margin-bottom: var(--space-8);
-}
-
-.price-card {
-  background: var(--color-white);
-  padding: var(--space-8);
-  border-radius: var(--radius-lg);
-  border: 2px solid transparent;
-  position: relative;
-  text-align: center;
-}
-
-[data-theme="dark"] .price-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-}
-
-.price-card.featured {
-  border-color: var(--color-accent);
-  transform: scale(1.05);
-}
-
-.popular-badge {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-accent);
-  color: #ffffff;
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-md);
-  font-size: var(--text-sm);
-  font-weight: 600;
-}
-
-.price-card h3 {
-  font-size: var(--text-xl);
-  margin-bottom: var(--space-3);
-  color: var(--color-primary);
-}
-
-.price {
-  font-size: var(--text-3xl);
-  font-weight: 800;
-  color: var(--color-accent);
-  margin-bottom: var(--space-4);
-}
-
-.price-card p {
-  color: var(--color-secondary);
-  margin-bottom: var(--space-6);
-  line-height: 1.6;
-}
-
-.price-card ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-}
-
-.price-card li {
-  color: var(--color-secondary);
-  margin-bottom: var(--space-2);
-  padding-left: var(--space-4);
-  position: relative;
-}
-
-.price-card li:before {
-  content: "✓";
-  color: var(--color-accent);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-}
-
-.pricing-note {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.pricing-note p {
-  color: var(--color-secondary);
-  font-style: italic;
-}
 
 .cta-section {
   padding: var(--space-20) 0;
@@ -578,14 +435,6 @@ import Layout from '../../components/Layout.astro';
   .step-item {
     flex-direction: column;
     text-align: center;
-  }
-  
-  .pricing-cards {
-    grid-template-columns: 1fr;
-  }
-  
-  .price-card.featured {
-    transform: none;
   }
 }
 </style>

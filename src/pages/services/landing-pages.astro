@@ -293,53 +293,8 @@ import Layout from '../../components/Layout.astro';
     </div>
   </section>
 
-  <section class="pricing-section">
+  <section class="guarantee-section">
     <div class="container">
-      <h2 class="section-title">Landing Page Investment</h2>
-      <div class="pricing-options">
-        <div class="pricing-card">
-          <h3>Single Landing Page</h3>
-          <div class="price">$1,200 - $2,200</div>
-          <p>Perfect for testing a single campaign or offer</p>
-          <ul>
-            <li>1 high-converting landing page</li>
-            <li>Mobile-optimized design</li>
-            <li>Form integration</li>
-            <li>Analytics setup</li>
-            <li>5-7 day delivery</li>
-          </ul>
-          <a href="/#contact" class="btn btn-outline">Get Started</a>
-        </div>
-        
-        <div class="pricing-card featured">
-          <div class="popular-tag">Most Popular</div>
-          <h3>Campaign Package</h3>
-          <div class="price">$2,800 - $4,200</div>
-          <p>Multiple pages for comprehensive campaign testing</p>
-          <ul>
-            <li>3 landing page variations</li>
-            <li>A/B testing setup</li>
-            <li>Conversion tracking</li>
-            <li>Performance optimization</li>
-            <li>10-14 day delivery</li>
-          </ul>
-          <a href="/#contact" class="btn btn-primary">Get Started</a>
-        </div>
-        
-        <div class="pricing-card">
-          <h3>Enterprise Solution</h3>
-          <div class="price">$4,500+</div>
-          <p>Complex funnels with multiple touchpoints</p>
-          <ul>
-            <li>Multiple landing pages</li>
-            <li>Complete funnel design</li>
-            <li>Advanced integrations</li>
-            <li>Ongoing optimization</li>
-            <li>2-3 week delivery</li>
-          </ul>
-          <a href="/#contact" class="btn btn-outline">Get Started</a>
-        </div>
-      </div>
       <div class="conversion-guarantee">
         <h3>Conversion Guarantee</h3>
         <p>We guarantee your new landing page will convert at least 25% better than your current page, or we'll optimize it until it does.</p>
@@ -711,89 +666,9 @@ import Layout from '../../components/Layout.astro';
   line-height: 1.6;
 }
 
-.pricing-section {
+.guarantee-section {
   padding: var(--space-20) 0;
   background: var(--color-light-gray);
-}
-
-.pricing-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
-  margin-bottom: var(--space-8);
-}
-
-.pricing-card {
-  background: var(--color-white);
-  padding: var(--space-8);
-  border-radius: var(--radius-lg);
-  text-align: center;
-  border: 2px solid transparent;
-  position: relative;
-}
-
-[data-theme="dark"] .pricing-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-}
-
-.pricing-card.featured {
-  border-color: var(--color-accent);
-  transform: scale(1.05);
-}
-
-.popular-tag {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-accent);
-  color: #ffffff;
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-md);
-  font-size: var(--text-sm);
-  font-weight: 600;
-}
-
-.pricing-card h3 {
-  font-size: var(--text-xl);
-  margin-bottom: var(--space-3);
-  color: var(--color-primary);
-}
-
-.price {
-  font-size: var(--text-3xl);
-  font-weight: 800;
-  color: var(--color-accent);
-  margin-bottom: var(--space-4);
-}
-
-.pricing-card p {
-  color: var(--color-secondary);
-  margin-bottom: var(--space-6);
-  line-height: 1.6;
-}
-
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  margin-bottom: var(--space-6);
-}
-
-.pricing-card li {
-  color: var(--color-secondary);
-  margin-bottom: var(--space-2);
-  padding-left: var(--space-4);
-  position: relative;
-}
-
-.pricing-card li:before {
-  content: "✓";
-  color: var(--color-accent);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
 }
 
 .conversion-guarantee {
@@ -846,10 +721,6 @@ import Layout from '../../components/Layout.astro';
   
   .case-before-after {
     grid-template-columns: 1fr;
-  }
-  
-  .pricing-card.featured {
-    transform: none;
   }
 }
 </style>

@@ -255,50 +255,8 @@ import Layout from '../../components/Layout.astro';
     </div>
   </section>
 
-  <section class="pricing-section">
+  <section class="guarantee-section">
     <div class="container">
-      <h2 class="section-title">Migration Investment</h2>
-      <div class="pricing-tiers">
-        <div class="price-tier">
-          <h3>Simple Migration</h3>
-          <div class="price">$1,500 - $2,500</div>
-          <p>Perfect for small business sites and blogs</p>
-          <ul>
-            <li>Up to 10 pages</li>
-            <li>Content transfer</li>
-            <li>Basic contact forms</li>
-            <li>SEO redirects</li>
-            <li>1-2 weeks delivery</li>
-          </ul>
-        </div>
-        
-        <div class="price-tier featured">
-          <div class="popular-label">Most Popular</div>
-          <h3>Complete Migration</h3>
-          <div class="price">$3,500 - $5,500</div>
-          <p>Full-featured business site migration</p>
-          <ul>
-            <li>Up to 25 pages</li>
-            <li>Custom functionality recreation</li>
-            <li>Advanced forms</li>
-            <li>Performance optimization</li>
-            <li>2-3 weeks delivery</li>
-          </ul>
-        </div>
-        
-        <div class="price-tier">
-          <h3>Complex Migration</h3>
-          <div class="price">$6,000+</div>
-          <p>Large sites with custom features</p>
-          <ul>
-            <li>Unlimited pages</li>
-            <li>Custom integrations</li>
-            <li>API connections</li>
-            <li>Advanced optimization</li>
-            <li>3-4 weeks delivery</li>
-          </ul>
-        </div>
-      </div>
       <div class="guarantee">
         <h3>Migration Guarantee</h3>
         <p>We guarantee your new site will load at least 3x faster than your current site, or we'll optimize it until it does.</p>
@@ -611,88 +569,9 @@ import Layout from '../../components/Layout.astro';
   color: var(--color-secondary);
 }
 
-.pricing-section {
+.guarantee-section {
   padding: var(--space-20) 0;
   background: var(--color-white);
-}
-
-.pricing-tiers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
-  margin-bottom: var(--space-8);
-}
-
-.price-tier {
-  background: var(--color-light-gray);
-  padding: var(--space-8);
-  border-radius: var(--radius-lg);
-  text-align: center;
-  position: relative;
-  border: 2px solid transparent;
-}
-
-[data-theme="dark"] .price-tier {
-  background: var(--color-light-gray);
-  border: 1px solid var(--color-border);
-}
-
-.price-tier.featured {
-  border-color: var(--color-accent);
-  transform: scale(1.05);
-}
-
-.popular-label {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-accent);
-  color: #ffffff;
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-md);
-  font-size: var(--text-sm);
-  font-weight: 600;
-}
-
-.price-tier h3 {
-  font-size: var(--text-xl);
-  margin-bottom: var(--space-3);
-  color: var(--color-primary);
-}
-
-.price {
-  font-size: var(--text-3xl);
-  font-weight: 800;
-  color: var(--color-accent);
-  margin-bottom: var(--space-4);
-}
-
-.price-tier p {
-  color: var(--color-secondary);
-  margin-bottom: var(--space-6);
-  line-height: 1.6;
-}
-
-.price-tier ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-}
-
-.price-tier li {
-  color: var(--color-secondary);
-  margin-bottom: var(--space-2);
-  padding-left: var(--space-4);
-  position: relative;
-}
-
-.price-tier li:before {
-  content: "✓";
-  color: var(--color-accent);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
 }
 
 .guarantee {
@@ -759,10 +638,6 @@ import Layout from '../../components/Layout.astro';
   
   .process-timeline::before {
     display: none;
-  }
-  
-  .price-tier.featured {
-    transform: none;
   }
 }
 </style>

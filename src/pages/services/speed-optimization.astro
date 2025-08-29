@@ -207,48 +207,6 @@ import Layout from '../../components/Layout.astro';
     </div>
   </section>
 
-  <section class="pricing-section">
-    <div class="container">
-      <h2 class="section-title">Speed Optimization Investment</h2>
-      <div class="pricing-tiers">
-        <div class="pricing-card">
-          <h3>Performance Audit</h3>
-          <div class="price">$299</div>
-          <p>Detailed analysis with specific recommendations</p>
-          <ul>
-            <li>Core Web Vitals analysis</li>
-            <li>Performance bottleneck identification</li>
-            <li>Optimization roadmap</li>
-            <li>Priority recommendations</li>
-          </ul>
-        </div>
-        <div class="pricing-card featured">
-          <div class="popular-label">Most Popular</div>
-          <h3>Complete Optimization</h3>
-          <div class="price">$1,500 - $3,000</div>
-          <p>Full performance optimization implementation</p>
-          <ul>
-            <li>Everything in audit</li>
-            <li>Image optimization</li>
-            <li>Code optimization</li>
-            <li>Caching setup</li>
-            <li>Performance monitoring</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <h3>Ongoing Monitoring</h3>
-          <div class="price">$299/month</div>
-          <p>Continuous performance monitoring and optimization</p>
-          <ul>
-            <li>Monthly performance reports</li>
-            <li>Ongoing optimizations</li>
-            <li>Performance regression alerts</li>
-            <li>Quarterly reviews</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="cta-section">
     <div class="container">
@@ -436,48 +394,6 @@ import Layout from '../../components/Layout.astro';
   color: #f59e0b;
 }
 
-.pricing-section {
-  padding: var(--space-20) 0;
-  background: var(--color-white);
-}
-
-.pricing-tiers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
-}
-
-.pricing-card {
-  background: var(--color-light-gray);
-  padding: var(--space-6);
-  border-radius: var(--radius-lg);
-  text-align: center;
-}
-
-.pricing-card.featured {
-  border: 2px solid var(--color-accent);
-  position: relative;
-}
-
-.popular-label {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-accent);
-  color: #ffffff;
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-md);
-  font-size: var(--text-sm);
-  font-weight: 600;
-}
-
-.price {
-  font-size: var(--text-2xl);
-  font-weight: 800;
-  color: var(--color-accent);
-  margin: var(--space-4) 0;
-}
 
 .cta-section {
   padding: var(--space-20) 0;
