@@ -18,20 +18,15 @@
             <div class="method-icon">📧</div>
             <div>
               <div class="method-label">Email us</div>
-              <a href="mailto:hello@staticpages.dev" class="method-value">hello@staticpages.dev</a>
-            </div>
-          </div>
-          <div class="contact-method">
-            <div class="method-icon">📞</div>
-            <div>
-              <div class="method-label">Call us</div>
-              <a href="tel:+1234567890" class="method-value">+1 (234) 567-890</a>
+              <a href="mailto:hey@staticpages.site" class="method-value">hey@staticpages.site</a>
             </div>
           </div>
         </div>
       </div>
       
-      <form class="contact-form" id="contactForm">
+      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="54aef1c0-a5f6-42b7-a60f-61c6f00e357c">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" required>
@@ -39,20 +34,6 @@
         <div class="form-group">
           <label for="email">Email *</label>
           <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company">
-        </div>
-        <div class="form-group">
-          <label for="budget">Project Budget</label>
-          <select id="budget" name="budget">
-            <option value="">Select budget range</option>
-            <option value="5k-10k">$5k - $10k</option>
-            <option value="10k-25k">$10k - $25k</option>
-            <option value="25k-50k">$25k - $50k</option>
-            <option value="50k+">$50k+</option>
-          </select>
         </div>
         <div class="form-group full-width">
           <label for="message">Tell us about your project *</label>

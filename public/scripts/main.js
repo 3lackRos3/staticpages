@@ -261,14 +261,24 @@
       submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Make actual API call to Web3Forms
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
       
-      showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
-      elements.contactForm.reset();
+      const data = await response.json();
+      
+      if (response.ok && data.success) {
+        showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
+        elements.contactForm.reset();
+      } else {
+        throw new Error(data.message || 'Failed to send message');
+      }
       
     } catch (error) {
       showNotification('Failed to send message. Please try again.', 'error');
+      console.error('Form submission error:', error);
     } finally {
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
